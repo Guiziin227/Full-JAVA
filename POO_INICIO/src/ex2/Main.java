@@ -27,20 +27,22 @@ public class Main {
         System.out.print("Quantidade no estoque: ");
         produto.quantity = sc.nextInt();
 
-        System.out.println("Dados do produto: " + produto.name + ", R$ " + produto.price + ", " + produto.quantity + " unidades, Total: R$ " + produto.totalValueInStock());
-
+        //System.out.println("Dados do produto: " + produto.name + ", R$ " + produto.price + ", " + produto.quantity + " unidades, Total: R$ " + produto.totalValueInStock());
+        System.out.println("Dados do produto: " + produto); //apos a criação do toString() no Product.java
         System.out.println("Digite o número de produtos a ser adicionado ao estoque: ");
         int quantity = sc.nextInt();
         produto.addProducts(quantity);
         //        int quantity = sc.nextInt();
         //        produto.quantity += quantity;
-        System.out.println("Dados atualizados: " + produto.name + ", R$ " + produto.price + ", " + produto.quantity + " unidades, Total: R$ " + produto.totalValueInStock());
-
+        //System.out.println("Dados atualizados: " + produto.name + ", R$ " + produto.price + ", " + produto.quantity + " unidades, Total: R$ " + produto.totalValueInStock());
+        System.out.println("Dados atualizados: " + produto);
         System.out.println("Digite o número de produtos a ser removido do estoque: ");
         quantity = sc.nextInt();
         produto.removeProducts(quantity);
         //        quantity = sc.nextInt();
         //        produto.quantity -= quantity;
-        System.out.println("Dados atualizados: " + produto.name + ", R$ " + produto.price + ", " + produto.quantity + " unidades, Total: R$ " + produto.totalValueInStock());
+        //System.out.println("Dados atualizados: " + produto.name + ", R$ " + produto.price + ", " + produto.quantity + " unidades, Total: R$ " + produto.totalValueInStock());
+        System.out.println("Dados atualizados: " + produto);
     }
+
 }
