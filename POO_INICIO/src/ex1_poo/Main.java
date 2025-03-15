@@ -1,6 +1,6 @@
-package ex_poo;
+package ex1_poo;
 
-import ex_poo.entities.Triangle;
+import ex1_poo.entities.Triangle;
 
 import java.util.Locale;
 import java.util.Scanner;

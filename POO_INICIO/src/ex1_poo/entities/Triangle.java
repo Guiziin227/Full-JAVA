@@ -1,4 +1,4 @@
-package ex_poo.entities;
+package ex1_poo.entities;
 
 public class Triangle {
     public double a;
