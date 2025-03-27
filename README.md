@@ -23,12 +23,6 @@ This course is designed to provide a comprehensive and didactic learning experie
 2. **Navigate to the course directory**: `cd your-repo-name`
 3. **Follow the course modules**: Each module is organized in a separate directory with relevant code examples and exercises.
 
-## Contributing
-We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for more details.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 
 # Curso de Java e Programação Orientada a Objetos
@@ -56,8 +50,3 @@ Este curso é projetado para fornecer uma experiência de aprendizado abrangente
 2. **Navegue até o diretório do curso**: `cd seu-repo-nome`
 3. **Siga os módulos do curso**: Cada módulo está organizado em um diretório separado com exemplos de código relevantes e exercícios.
 
-## Contribuindo
-Contribuições são bem-vindas! Por favor, leia nossas [Diretrizes de Contribuição](CONTRIBUTING.md) para mais detalhes.
-
-## Licença
-Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
