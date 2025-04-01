@@ -1,0 +1,2 @@
+Name: TV LED, Value: 1240.99
+Name: Video Game, Value: 1351.5
