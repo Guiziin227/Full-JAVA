@@ -15,7 +15,6 @@ public class Main {
 
         List<Product> list = new ArrayList<>();
 
-
         System.out.println("File path");
         String filePath = sc.nextLine();
 
