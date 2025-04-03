@@ -2,6 +2,8 @@ package aula01_interfaces;
 
 import aula01_interfaces.model.entities.CarRental;
 import aula01_interfaces.model.entities.Vehicles;
+import aula01_interfaces.model.services.BrazilTaxService;
+import aula01_interfaces.model.services.RentalService;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -25,8 +27,18 @@ public class Main {
 
         CarRental cr = new CarRental(start, finish, new Vehicles(model));
 
-        System.out.print("Preço por hora: ");
+        System.out.println("Entre com o preço por hora:");
+        double pricePerHour = sc.nextDouble();
+        System.out.println("Entre com o preço por dia:");
+        double pricePerDay = sc.nextDouble();
 
+        RentalService rentalService = new RentalService(pricePerHour,pricePerDay,new BrazilTaxService());
+        rentalService.processInvoice(cr);
+
+        System.out.println("FATURA:");
+        System.out.println("Pagamento basico: " + cr.getInvoice().getBasicPayment());
+        System.out.println("Imposto: " + cr.getInvoice().getTax());
+        System.out.println("Pagamento total: " + cr.getInvoice().getTotalPayment());
 
         sc.close();
     }
