@@ -1,0 +1,7 @@
+Ana,2234.30
+Clenio,3000.00
+Malu,2000.00
+Pedro,1500.00
+Ingrid,1500.00
+Biju,2000.00
+Guilherme,3000.00
