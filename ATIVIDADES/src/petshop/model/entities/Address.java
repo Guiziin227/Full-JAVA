@@ -51,6 +51,6 @@ public class Address {
                 "numero: " + numeroCasa +
                         ", cidade: '" + cidade + '\'' +
                         ", rua: " + rua +
-                        ", bairo: " + bairro;
+                        ", bairro: " + bairro;
     }
 }

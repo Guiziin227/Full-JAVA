@@ -5,9 +5,11 @@ import petshop.model.entities.Pets;
 import petshop.model.entities.enums.Sexo;
 import petshop.model.entities.enums.Tipo;
 import petshop.model.exceptions.DomainExceptions;
+import petshop.model.services.SaveService;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -73,7 +75,7 @@ public class Main {
 
                                 switch (i) {
                                     case 0:
-                                        nomeCompleto = sc.nextLine();
+                                        nomeCompleto = sc.nextLine().trim();
                                         if (!nomeCompleto.matches("[a-zA-ZÀ-ú\\s]+") || !nomeCompleto.contains(" ")) {
                                             throw new DomainExceptions("Nome inválido. Deve conter nome e sobrenome, apenas letras.");
                                         } else if (nomeCompleto.isEmpty()){
@@ -140,6 +142,9 @@ public class Main {
                             Address address = new Address(numeroCasa, cidade, rua, bairro);
                             Pets p = new Pets(nomeCompleto, address, idade, peso, raca, tipo, sexo);
                             list.add(p);
+                            Instant i = Instant.now();
+                            SaveService ss = new SaveService(i);
+                            ss.saveFile(p,nomeCompleto);
                             System.out.println("Pet cadastrado com sucesso: " + p.getNomeCompleto());
 
                         } catch (IllegalArgumentException e) {

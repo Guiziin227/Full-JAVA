@@ -30,11 +30,9 @@ public class Pets {
             if (nomeCompleto.charAt(j) == ' ') {
                 espacos++;
             }
-
-
         }
 
-        if (espacos == 0 || !nomeCompleto.matches("^[A-Za-z]+\\s[A-Za-z]+$")) {
+        if (espacos == 0 || !nomeCompleto.matches("^[A-Za-z]+(?:\\s[A-Za-z]+)+$")) {
             throw new DomainExceptions("O nome precisa ser completo e sem caracteres especiais");
         } else {
             System.out.println("Nome cadastrado");
@@ -100,8 +98,6 @@ public class Pets {
 
     @Override
     public String toString() {
-
-
         return
                 "Nome completo: '" + nomeCompleto + '\'' +
                         ", " + address.toString() +
