@@ -1,0 +1,3 @@
+tv,700
+pogger,10000
+smartphone,2000
