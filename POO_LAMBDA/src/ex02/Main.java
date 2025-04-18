@@ -26,9 +26,15 @@ public class Main {
                     .map(Person::getName)
                     .collect(Collectors.toList());
 
+            double sum = people.stream().filter(p -> p.getName().charAt(0) == 'M').collect(Collectors.summingDouble(Person::getSalary));
+
+            System.out.println("Soma dos salarios comecando com M: " + sum);
+
             for (String p : names) {
                 System.out.println(p);
             }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
